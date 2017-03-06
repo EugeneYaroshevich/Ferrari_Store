@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ferrari</title>
+    <link href="CSS/styles.css" rel="stylesheet" type="text/css"/>
+    <script src="JS/jquery-1.11.0.min.js"></script>
+    <script src="JS/scrypts.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+        <img alt="Изображение" src="images/Header_Ferrari-LaFerrari_3.jpg"/>
+    </div>
+    <div id="content">
+        <div id="nav" >
+            <ul>
+                <li><a href="index.html"><img alt="Изображение" src="images/Logo_6.jpg"/></a></li>
+                <li><a href="California.html">Ferrari California</a></li>
+                <li><a href="Fiorano.html">Ferrari 599 GTB Fiorano</a></li>
+                <li><a href="LaFerrari.html">Ferrari LaFerrari</a></li>
+            </ul>
+            <div id="map"><img src="images/Map.JPG" alt="Map"></div>
+        </div>
+        <div id="main">
+          <table>
+              <tr >
+                <td id="main_title"  colspan="3"><h1>Главная</h1></td>
+              </tr>
+              <tr>
+                <td class="small_card" >
+                 <img alt="Изображение" src="images/California.jpg"/>
+                    <div class="content">
+                    <small>Кабриолет (родстер)</small>
+                    <h2>Ferrari California</h2>
+                    <p>Ferrari California — 2-х местный родстер с жесткой раскладывающейся крышей итальянской компании Ferrari. Впервые был представлен на Парижском мотор-шоу в 2008 году.</p>
+                    <a href="California.html">Перейти</a>
+                    </div>
+                </td>
+                  
+                 <td class="small_card" >
+                 <img alt="Изображение" src="images/Fiorano.jpg"/>
+                     <div class="content">
+                    <small>Купе</small>
+                    <h2>Ferrari 599 GTB Fiorano</h2>
+                    <p>Ferrari 599 GTB Fiorano — спортивный заднеприводный двухместный малосерийный автомобиль с бензиновым V-образным 12-цилиндровым двигателем. Он стал новой флагманской моделью Ferrari и был представлен на Женевском Мотор Шоу 28 февраля 2006 года.</p>
+                    <a href="Fiorano.html">Перейти</a>
+                     </div>
+                </td>
+                  
+                  <td class="small_card" >
+                 <img alt="Изображение" src="images/LaFerrari.jpg"/>
+                      <div class="content">
+                    <small>Купе</small>
+                    <h2>Ferrari LaFerrari</h2>
+                    <p>Ferrari LaFerrari — гибридный гиперкар итальянской фирмы Ferrari, первый серийный гибридный автомобиль компании. Выпущен ограниченной серией в 2013 году.</p>
+                    <a href="LaFerrari.html">Перейти</a>
+                      </div>
+                </td>
+              </tr>
+              <tr>
+                  <td class="big_card"  colspan="3">
+                  <img alt="Изображение" src="images/ferrari-laferrari-blue.jpg"/>
+                        <form onsubmit="return false" action="Home/Lid" method="POST">
+                            <fieldset>
+                                <legend>Оформление заказа</legend>
+                                <input type="text" name="Name" placeholder="Введите ваше имя" required/><br/>
+                                <input type="tel" name="Tel" placeholder="Enter number 8-ххх-ххх-хххх" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{4}" required/><br/>
+                                <select name="Car">
+                                    <option value="California" >California</option>
+                                    <option value="Fiorano">Fiorano</option>
+                                    <option value="LaFerrari">LaFerrari</option>
+                                </select><br/>
+                                <input type="submit"/>
+                            </fieldset>
+                      </form>
+                  </td>
+              </tr>
+        </table>
+        </div>
+    </div>
+    <div id="footer">Copyrite</div>
+</div>
+</body>
+</html>
